@@ -35,7 +35,7 @@ This application is not meant to be an example of how code should be written, bu
 This app uses the Flicker API. To use the API, you need the API key and the search text e.g "Cars" to first connect with an endpoint to get the photo information such as server, secret and PhotoID. That  can then be used for future calls.
 In this app, I'm retrieving the photos from the API by specifying the number of items per page and the the page number in the API call. The items per page limit in this app is 20, which means the api call will give 20 items per page until the new page is required.
 
-To retrieve an photos information, you hit this endpoint
+To retrieve photos information, you hit this endpoint
 
 `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=96358825614a5d3b1a1c3fd87fca2b47&text=Cars&format=json&nojsoncallback=1&per_page=20&page=1` and retrieve the information from the response. 
 
