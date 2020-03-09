@@ -60,6 +60,6 @@ To retrieve photos information, you hit this endpoint
 
 We can then use this information - farm,server, secret and photoID to retrieve the photos.  `http://farm{farm}.static.flickr.com/{server}/{id}_{secret}.jpg`, returns the image:
 
-Everytime the user scrolls, the app will call the api and download new images as required  checking the index path and the page number. 
+Everytime the user scrolls to last row, the app will call the api and download new images as required  checking the index path and the page number. 
 '```if indexPath.row == lastRowIndex && paging != nil ```
 
