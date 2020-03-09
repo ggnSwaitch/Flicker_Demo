@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE750D002410EA7F00751220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750CFF2410EA7F00751220 /* AppDelegate.swift */; };
+		CE750D022410EA7F00751220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D012410EA7F00751220 /* SceneDelegate.swift */; };
+		CE750D042410EA7F00751220 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D032410EA7F00751220 /* SearchViewController.swift */; };
+		CE750D072410EA7F00751220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE750D052410EA7F00751220 /* Main.storyboard */; };
+		CE750D092410EA7F00751220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE750D082410EA7F00751220 /* Assets.xcassets */; };
+		CE750D0C2410EA7F00751220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE750D0A2410EA7F00751220 /* LaunchScreen.storyboard */; };
+		CE750D172410EA7F00751220 /* Flicker_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D162410EA7F00751220 /* Flicker_DemoTests.swift */; };
+		CE750D222410EA7F00751220 /* Flicker_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D212410EA7F00751220 /* Flicker_DemoUITests.swift */; };
+		CE750D532411002800751220 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D522411002800751220 /* APIManager.swift */; };
+		CE750D572411014900751220 /* RestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D562411014900751220 /* RestHandler.swift */; };
+		CE750D59241101B800751220 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D58241101B800751220 /* SearchResponse.swift */; };
+		CE750D5B2411024500751220 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D5A2411024500751220 /* PhotosViewModel.swift */; };
+		CE750D5F2411326300751220 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D5E2411326300751220 /* FlickrPhoto.swift */; };
+		CE750D612411389200751220 /* FlickrPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D602411389200751220 /* FlickrPhotoCell.swift */; };
+		CE750D64241138D400751220 /* UICollectionViewCell+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D63241138D400751220 /* UICollectionViewCell+Addition.swift */; };
+		CE750D6624113B2700751220 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D6524113B2700751220 /* FlickrSearchResults.swift */; };
+		CE750D6824113B9000751220 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D6724113B9000751220 /* ImageDownloadManager.swift */; };
+		CE750D6B24113BB900751220 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D6A24113BB900751220 /* DownloadOperation.swift */; };
+		CE750DA9241348CC00751220 /* SearchViewController+WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750DA8241348CC00751220 /* SearchViewController+WebService.swift */; };
+		CE750DAA2413C77000751220 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D522411002800751220 /* APIManager.swift */; };
+		CE750DAC2413C77F00751220 /* Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750DAB2413C77F00751220 /* Paging.swift */; };
+		CE85632E24152E3200F251CF /* SearchViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85632D24152E3200F251CF /* SearchViewController+CollectionView.swift */; };
+		CE8563342415324000F251CF /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D58241101B800751220 /* SearchResponse.swift */; };
+		CE8563352415324300F251CF /* RestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D562411014900751220 /* RestHandler.swift */; };
+		CE8563362415325100F251CF /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D5E2411326300751220 /* FlickrPhoto.swift */; };
+		CE8563372415326300F251CF /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE750D6524113B2700751220 /* FlickrSearchResults.swift */; };
+		CE8563392415498700F251CF /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8563382415498700F251CF /* SearchTextField.swift */; };
+		CE85633E2415E2A200F251CF /* PhotoDownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85633D2415E2A200F251CF /* PhotoDownloadViewModel.swift */; };
+		CE85634024162A7300F251CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE85633F24162A7300F251CF /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE750D132410EA7F00751220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE750CF42410EA7F00751220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE750CFB2410EA7F00751220;
+			remoteInfo = Flicker_Demo;
+		};
+		CE750D1E2410EA7F00751220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE750CF42410EA7F00751220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE750CFB2410EA7F00751220;
+			remoteInfo = Flicker_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE750CFC2410EA7F00751220 /* Flicker_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicker_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE750CFF2410EA7F00751220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE750D012410EA7F00751220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE750D032410EA7F00751220 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE750D062410EA7F00751220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE750D082410EA7F00751220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE750D0B2410EA7F00751220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE750D0D2410EA7F00751220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE750D122410EA7F00751220 /* Flicker_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flicker_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE750D162410EA7F00751220 /* Flicker_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flicker_DemoTests.swift; sourceTree = "<group>"; };
+		CE750D182410EA7F00751220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE750D1D2410EA7F00751220 /* Flicker_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flicker_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE750D212410EA7F00751220 /* Flicker_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flicker_DemoUITests.swift; sourceTree = "<group>"; };
+		CE750D232410EA7F00751220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE750D522411002800751220 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CE750D562411014900751220 /* RestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestHandler.swift; sourceTree = "<group>"; };
+		CE750D58241101B800751220 /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		CE750D5A2411024500751220 /* PhotosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		CE750D5E2411326300751220 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
+		CE750D602411389200751220 /* FlickrPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhotoCell.swift; sourceTree = "<group>"; };
+		CE750D63241138D400751220 /* UICollectionViewCell+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Addition.swift"; sourceTree = "<group>"; };
+		CE750D6524113B2700751220 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearchResults.swift; sourceTree = "<group>"; };
+		CE750D6724113B9000751220 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		CE750D6A24113BB900751220 /* DownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
+		CE750DA8241348CC00751220 /* SearchViewController+WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+WebService.swift"; sourceTree = "<group>"; };
+		CE750DAB2413C77F00751220 /* Paging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paging.swift; sourceTree = "<group>"; };
+		CE85632D24152E3200F251CF /* SearchViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		CE8563382415498700F251CF /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		CE85633D2415E2A200F251CF /* PhotoDownloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloadViewModel.swift; sourceTree = "<group>"; };
+		CE85633F24162A7300F251CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE750CF92410EA7F00751220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE750D0F2410EA7F00751220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE750D1A2410EA7F00751220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE750CF32410EA7F00751220 = {
+			isa = PBXGroup;
+			children = (
+				CE85633F24162A7300F251CF /* README.md */,
+				CE750CFE2410EA7F00751220 /* Flicker_Demo */,
+				CE750D152410EA7F00751220 /* Flicker_DemoTests */,
+				CE750D202410EA7F00751220 /* Flicker_DemoUITests */,
+				CE750CFD2410EA7F00751220 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE750CFD2410EA7F00751220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE750CFC2410EA7F00751220 /* Flicker_Demo.app */,
+				CE750D122410EA7F00751220 /* Flicker_DemoTests.xctest */,
+				CE750D1D2410EA7F00751220 /* Flicker_DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE750CFE2410EA7F00751220 /* Flicker_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				CE8563332415322A00F251CF /* Network */,
+				CE8563322415313D00F251CF /* ViewModel */,
+				CE8563312415302C00F251CF /* View controller */,
+				CE85633B2415E1E800F251CF /* AppDelegates */,
+				CE85633C2415E20200F251CF /* Resources */,
+				CE750D6924113BB800751220 /* Utility */,
+				CE750D0D2410EA7F00751220 /* Info.plist */,
+			);
+			path = Flicker_Demo;
+			sourceTree = "<group>";
+		};
+		CE750D152410EA7F00751220 /* Flicker_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D162410EA7F00751220 /* Flicker_DemoTests.swift */,
+				CE750D182410EA7F00751220 /* Info.plist */,
+			);
+			path = Flicker_DemoTests;
+			sourceTree = "<group>";
+		};
+		CE750D202410EA7F00751220 /* Flicker_DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D212410EA7F00751220 /* Flicker_DemoUITests.swift */,
+				CE750D232410EA7F00751220 /* Info.plist */,
+			);
+			path = Flicker_DemoUITests;
+			sourceTree = "<group>";
+		};
+		CE750D6924113BB800751220 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D6A24113BB900751220 /* DownloadOperation.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CE8563312415302C00F251CF /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D032410EA7F00751220 /* SearchViewController.swift */,
+				CE750D602411389200751220 /* FlickrPhotoCell.swift */,
+				CE8563382415498700F251CF /* SearchTextField.swift */,
+				CE750D63241138D400751220 /* UICollectionViewCell+Addition.swift */,
+				CE750DA8241348CC00751220 /* SearchViewController+WebService.swift */,
+				CE85632D24152E3200F251CF /* SearchViewController+CollectionView.swift */,
+			);
+			path = "View controller";
+			sourceTree = "<group>";
+		};
+		CE8563322415313D00F251CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D5A2411024500751220 /* PhotosViewModel.swift */,
+				CE85633D2415E2A200F251CF /* PhotoDownloadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE8563332415322A00F251CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D522411002800751220 /* APIManager.swift */,
+				CE750D58241101B800751220 /* SearchResponse.swift */,
+				CE750D562411014900751220 /* RestHandler.swift */,
+				CE750D5E2411326300751220 /* FlickrPhoto.swift */,
+				CE750D6524113B2700751220 /* FlickrSearchResults.swift */,
+				CE750D6724113B9000751220 /* ImageDownloadManager.swift */,
+				CE750DAB2413C77F00751220 /* Paging.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE85633B2415E1E800F251CF /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				CE750CFF2410EA7F00751220 /* AppDelegate.swift */,
+				CE750D012410EA7F00751220 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		CE85633C2415E20200F251CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE750D052410EA7F00751220 /* Main.storyboard */,
+				CE750D0A2410EA7F00751220 /* LaunchScreen.storyboard */,
+				CE750D082410EA7F00751220 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE750CFB2410EA7F00751220 /* Flicker_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE750D262410EA7F00751220 /* Build configuration list for PBXNativeTarget "Flicker_Demo" */;
+			buildPhases = (
+				CE750CF82410EA7F00751220 /* Sources */,
+				CE750CF92410EA7F00751220 /* Frameworks */,
+				CE750CFA2410EA7F00751220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flicker_Demo;
+			productName = Flicker_Demo;
+			productReference = CE750CFC2410EA7F00751220 /* Flicker_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE750D112410EA7F00751220 /* Flicker_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE750D292410EA7F00751220 /* Build configuration list for PBXNativeTarget "Flicker_DemoTests" */;
+			buildPhases = (
+				CE750D0E2410EA7F00751220 /* Sources */,
+				CE750D0F2410EA7F00751220 /* Frameworks */,
+				CE750D102410EA7F00751220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE750D142410EA7F00751220 /* PBXTargetDependency */,
+			);
+			name = Flicker_DemoTests;
+			productName = Flicker_DemoTests;
+			productReference = CE750D122410EA7F00751220 /* Flicker_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE750D1C2410EA7F00751220 /* Flicker_DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE750D2C2410EA7F00751220 /* Build configuration list for PBXNativeTarget "Flicker_DemoUITests" */;
+			buildPhases = (
+				CE750D192410EA7F00751220 /* Sources */,
+				CE750D1A2410EA7F00751220 /* Frameworks */,
+				CE750D1B2410EA7F00751220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE750D1F2410EA7F00751220 /* PBXTargetDependency */,
+			);
+			name = Flicker_DemoUITests;
+			productName = Flicker_DemoUITests;
+			productReference = CE750D1D2410EA7F00751220 /* Flicker_DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE750CF42410EA7F00751220 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = GaGan;
+				TargetAttributes = {
+					CE750CFB2410EA7F00751220 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CE750D112410EA7F00751220 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CE750CFB2410EA7F00751220;
+					};
+					CE750D1C2410EA7F00751220 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CE750CFB2410EA7F00751220;
+					};
+				};
+			};
+			buildConfigurationList = CE750CF72410EA7F00751220 /* Build configuration list for PBXProject "Flicker_Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE750CF32410EA7F00751220;
+			productRefGroup = CE750CFD2410EA7F00751220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE750CFB2410EA7F00751220 /* Flicker_Demo */,
+				CE750D112410EA7F00751220 /* Flicker_DemoTests */,
+				CE750D1C2410EA7F00751220 /* Flicker_DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE750CFA2410EA7F00751220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE750D0C2410EA7F00751220 /* LaunchScreen.storyboard in Resources */,
+				CE750D092410EA7F00751220 /* Assets.xcassets in Resources */,
+				CE85634024162A7300F251CF /* README.md in Resources */,
+				CE750D072410EA7F00751220 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE750D102410EA7F00751220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE750D1B2410EA7F00751220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE750CF82410EA7F00751220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE750D6B24113BB900751220 /* DownloadOperation.swift in Sources */,
+				CE750D572411014900751220 /* RestHandler.swift in Sources */,
+				CE750D59241101B800751220 /* SearchResponse.swift in Sources */,
+				CE750D64241138D400751220 /* UICollectionViewCell+Addition.swift in Sources */,
+				CE750D532411002800751220 /* APIManager.swift in Sources */,
+				CE85633E2415E2A200F251CF /* PhotoDownloadViewModel.swift in Sources */,
+				CE750DA9241348CC00751220 /* SearchViewController+WebService.swift in Sources */,
+				CE750D042410EA7F00751220 /* SearchViewController.swift in Sources */,
+				CE750D5F2411326300751220 /* FlickrPhoto.swift in Sources */,
+				CE750D6824113B9000751220 /* ImageDownloadManager.swift in Sources */,
+				CE750D5B2411024500751220 /* PhotosViewModel.swift in Sources */,
+				CE750D6624113B2700751220 /* FlickrSearchResults.swift in Sources */,
+				CE8563392415498700F251CF /* SearchTextField.swift in Sources */,
+				CE85632E24152E3200F251CF /* SearchViewController+CollectionView.swift in Sources */,
+				CE750D612411389200751220 /* FlickrPhotoCell.swift in Sources */,
+				CE750DAC2413C77F00751220 /* Paging.swift in Sources */,
+				CE750D002410EA7F00751220 /* AppDelegate.swift in Sources */,
+				CE750D022410EA7F00751220 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE750D0E2410EA7F00751220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8563352415324300F251CF /* RestHandler.swift in Sources */,
+				CE8563372415326300F251CF /* FlickrSearchResults.swift in Sources */,
+				CE750DAA2413C77000751220 /* APIManager.swift in Sources */,
+				CE750D172410EA7F00751220 /* Flicker_DemoTests.swift in Sources */,
+				CE8563362415325100F251CF /* FlickrPhoto.swift in Sources */,
+				CE8563342415324000F251CF /* SearchResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE750D192410EA7F00751220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE750D222410EA7F00751220 /* Flicker_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE750D142410EA7F00751220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE750CFB2410EA7F00751220 /* Flicker_Demo */;
+			targetProxy = CE750D132410EA7F00751220 /* PBXContainerItemProxy */;
+		};
+		CE750D1F2410EA7F00751220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE750CFB2410EA7F00751220 /* Flicker_Demo */;
+			targetProxy = CE750D1E2410EA7F00751220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE750D052410EA7F00751220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE750D062410EA7F00751220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE750D0A2410EA7F00751220 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE750D0B2410EA7F00751220 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE750D242410EA7F00751220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE750D252410EA7F00751220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE750D272410EA7F00751220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = Flicker_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GaGan.Flicker-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE750D282410EA7F00751220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = Flicker_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GaGan.Flicker-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE750D2A2410EA7F00751220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = Flicker_DemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GaGan.Flicker-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flicker_Demo.app/Flicker_Demo";
+			};
+			name = Debug;
+		};
+		CE750D2B2410EA7F00751220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = Flicker_DemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GaGan.Flicker-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flicker_Demo.app/Flicker_Demo";
+			};
+			name = Release;
+		};
+		CE750D2D2410EA7F00751220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = Flicker_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GaGan.Flicker-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flicker_Demo;
+			};
+			name = Debug;
+		};
+		CE750D2E2410EA7F00751220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = Flicker_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GaGan.Flicker-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flicker_Demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE750CF72410EA7F00751220 /* Build configuration list for PBXProject "Flicker_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE750D242410EA7F00751220 /* Debug */,
+				CE750D252410EA7F00751220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE750D262410EA7F00751220 /* Build configuration list for PBXNativeTarget "Flicker_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE750D272410EA7F00751220 /* Debug */,
+				CE750D282410EA7F00751220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE750D292410EA7F00751220 /* Build configuration list for PBXNativeTarget "Flicker_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE750D2A2410EA7F00751220 /* Debug */,
+				CE750D2B2410EA7F00751220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE750D2C2410EA7F00751220 /* Build configuration list for PBXNativeTarget "Flicker_DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE750D2D2410EA7F00751220 /* Debug */,
+				CE750D2E2410EA7F00751220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE750CF42410EA7F00751220 /* Project object */;
+}
