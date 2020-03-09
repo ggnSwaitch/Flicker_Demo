@@ -1,5 +1,4 @@
 # Flicker_Demo
-Flicker_Demo
 ========
 
 This repository contains a simple sample app using the Flicker API to be used as a coding assignment for mobile developer candidates.
