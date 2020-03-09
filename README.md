@@ -1,7 +1,7 @@
 # Flicker_Demo
 ========
 
-This repository contains a simple sample app using the Flicker API to be used as a coding assignment for mobile developer candidates.
+This repository contains a simple sample app using the Flickr API to be used as a coding assignment for mobile developer candidates.
 
 
 # Architecture
